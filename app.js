@@ -31,6 +31,6 @@ app.get('/conversation/detail/t_263190571497633', (req, res) => {
     res.send(detailInbox2)
 });
 
-app.listen(1111, () => {
-    console.log('Application running on http://localhost:1111');
+app.listen(process.env.PORT || 1111, () => {
+    console.log('Application running on http://localhost:' + (process.env.PORT || 3000));
 });
